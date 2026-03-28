@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Warm Stories</title>
+  <meta name="description" content="Get in touch with the Warm Stories team.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <a href="/" class="logo">Warm Stories</a>
+      
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="/" class="{{#ifEquals currentPage 'home'}}active{{/ifEquals}}">Home</a></li>
+          <li><a href="/blog.html" class="{{#ifEquals currentPage 'blog'}}active{{/ifEquals}}">Blog</a></li>
+          <li><a href="/about.html" class="{{#ifEquals currentPage 'about'}}active{{/ifEquals}}">About</a></li>
+          <li><a href="/contact.html" class="{{#ifEquals currentPage 'contact'}}active{{/ifEquals}}">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    
+      <div class="page-header">
+        <div class="container">
+          <h1>Get In Touch</h1>
+          <p>We'd love to hear from you</p>
+        </div>
+      </div>
+
+      <section class="section">
+        <div class="container">
+          <div class="contact-section">
+            <form class="contact-form" id="contactForm">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required placeholder="John Smith">
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required placeholder="john@example.com">
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required placeholder="Collaboration opportunity">
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required placeholder="Tell us what's on your mind..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+            </form>
+            
+            <div class="contact-info">
+              <h3>Other Ways to Connect</h3>
+              <div class="contact-info-item">
+                <i class="far fa-envelope"></i>
+                <div>
+                  <strong>Email</strong>
+                  <p style="color: var(--secondary);">hello@warmstories.com</p>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <i class="fab fa-twitter"></i>
+                <div>
+                  <strong>Twitter</strong>
+                  <p style="color: var(--secondary);">@warmstories</p>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <i class="fab fa-instagram"></i>
+                <div>
+                  <strong>Instagram</strong>
+                  <p style="color: var(--secondary);">@warmstories</p>
+                </div>
+              </div>
+              
+              <div style="margin-top: 32px;">
+                <h4 style="margin-bottom: 16px;">Frequently Asked</h4>
+                <div class="faq-list">
+                  <div class="faq-item">
+                    <button class="faq-question">
+                      Can I write for Warm Stories?
+                      <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                      <p>Yes! We accept guest contributions from time to time. Send us a pitch with your idea and some examples of your work.</p>
+                    </div>
+                  </div>
+                  <div class="faq-item">
+                    <button class="faq-question">
+                      Do you accept sponsorships?
+                      <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                      <p>We don't do sponsored content. However, we're open to partnerships with brands that align with our values.</p>
+                    </div>
+                  </div>
+                  <div class="faq-item">
+                    <button class="faq-question">
+                      Can I republish your articles?
+                      <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                      <p>Our content is copyrighted. Please contact us for syndication or licensing requests.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>Warm Stories</h3>
+          <p>A digital space dedicated to thoughtful stories about life, travel, design, and the pursuit of meaning.</p>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/blog.html">Blog</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="/blog.html?category=lifestyle">Lifestyle</a></li>
+            <li><a href="/blog.html?category=travel">Travel</a></li>
+            <li><a href="/blog.html?category=design">Design</a></li>
+            <li><a href="/blog.html?category=food">Food</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+            <li><a href="#"><i class="fab fa-pinterest"></i> Pinterest</a></li>
+            <li><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>2026 Warm Stories. Crafted with care.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="/js/main.js"></script>
+</body>
+</html>

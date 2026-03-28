@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Warm Stories</title>
+  <meta name="description" content="Learn about Warm Stories and our mission.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <a href="/" class="logo">Warm Stories</a>
+      
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="/" class="{{#ifEquals currentPage 'home'}}active{{/ifEquals}}">Home</a></li>
+          <li><a href="/blog.html" class="{{#ifEquals currentPage 'blog'}}active{{/ifEquals}}">Blog</a></li>
+          <li><a href="/about.html" class="{{#ifEquals currentPage 'about'}}active{{/ifEquals}}">About</a></li>
+          <li><a href="/contact.html" class="{{#ifEquals currentPage 'contact'}}active{{/ifEquals}}">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    
+      <div class="page-header">
+        <div class="container">
+          <h1>About Us</h1>
+          <p>The story behind Warm Stories</p>
+        </div>
+      </div>
+
+      <section class="section">
+        <div class="container">
+          <div class="about-content">
+            <div class="about-image animate-on-scroll">
+              <img src="https://images.unsplash.com/photo-1457369804613-52c61a468e7d?w=800&q=80" alt="Our workspace">
+            </div>
+            <div class="about-text animate-on-scroll">
+              <h2>Why We Started</h2>
+              <p>Warm Stories began in 2024 as a simple desire: to create a space for thoughtful writing in a world of endless scrolling. We believe that good stories have the power to connect us, inspire us, and remind us what it means to be human.</p>
+              <p>Our team of writers, editors, and designers work together to bring you pieces that matter. We take our time with each story, ensuring it meets our standards of quality and authenticity.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" style="background: var(--surface);">
+        <div class="container">
+          <div class="section-header animate-on-scroll">
+            <h2>Our Values</h2>
+            <p>Principles that guide everything we do</p>
+          </div>
+          <div class="post-grid" style="grid-template-columns: repeat(3, 1fr);">
+            <div class="post-card animate-on-scroll" style="text-align: center;">
+              <div style="font-size: 2.5rem; margin-bottom: 16px;">💎</div>
+              <h4>Quality Over Quantity</h4>
+              <p style="color: var(--secondary); font-size: 0.95rem;">We publish less, but we make sure every piece is worth your time.</p>
+            </div>
+            <div class="post-card animate-on-scroll" style="text-align: center;">
+              <div style="font-size: 2.5rem; margin-bottom: 16px;">🎯</div>
+              <h4>Authenticity First</h4>
+              <p style="color: var(--secondary); font-size: 0.95rem;">Real experiences, honest opinions, no sponsored content.</p>
+            </div>
+            <div class="post-card animate-on-scroll" style="text-align: center;">
+              <div style="font-size: 2.5rem; margin-bottom: 16px;">🌱</div>
+              <h4>Mindful Design</h4>
+              <p style="color: var(--secondary); font-size: 0.95rem;">We care about how content looks and feels as much as what it says.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>Warm Stories</h3>
+          <p>A digital space dedicated to thoughtful stories about life, travel, design, and the pursuit of meaning.</p>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/blog.html">Blog</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="/blog.html?category=lifestyle">Lifestyle</a></li>
+            <li><a href="/blog.html?category=travel">Travel</a></li>
+            <li><a href="/blog.html?category=design">Design</a></li>
+            <li><a href="/blog.html?category=food">Food</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+            <li><a href="#"><i class="fab fa-pinterest"></i> Pinterest</a></li>
+            <li><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>2026 Warm Stories. Crafted with care.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="/js/main.js"></script>
+</body>
+</html>

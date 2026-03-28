@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - Warm Stories</title>
+  <meta name="description" content="All our stories - lifestyle, travel, design, food, and more.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <a href="/" class="logo">Warm Stories</a>
+      
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="/" class="{{#ifEquals currentPage 'home'}}active{{/ifEquals}}">Home</a></li>
+          <li><a href="/blog.html" class="{{#ifEquals currentPage 'blog'}}active{{/ifEquals}}">Blog</a></li>
+          <li><a href="/about.html" class="{{#ifEquals currentPage 'about'}}active{{/ifEquals}}">About</a></li>
+          <li><a href="/contact.html" class="{{#ifEquals currentPage 'contact'}}active{{/ifEquals}}">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    
+      <div class="page-header">
+        <div class="container">
+          <h1>Our Stories</h1>
+          <p>Thoughts, experiences, and perspectives worth sharing</p>
+        </div>
+      </div>
+
+      <section class="section">
+        <div class="container">
+          <div class="blog-filters">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="lifestyle">Lifestyle</button>
+            <button class="filter-btn" data-category="travel">Travel</button>
+            <button class="filter-btn" data-category="productivity">Productivity</button>
+            <button class="filter-btn" data-category="design">Design</button>
+            <button class="filter-btn" data-category="food">Food</button>
+            <button class="filter-btn" data-category="technology">Technology</button>
+          </div>
+          <div class="post-grid">
+            
+<article class="post-card" data-category="lifestyle">
+  <a href="/post.html?slug=finding-calm-in-chaos">
+    <div class="post-card-image">
+      <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&q=80" alt="Finding Calm in Chaos: A Guide to Mindful Living" loading="lazy">
+      <span class="post-card-category">Lifestyle</span>
+    </div>
+    <div class="post-card-content">
+      <div class="post-card-meta">
+        <span><i class="far fa-calendar"></i> March 25, 2026</span>
+        <span><i class="far fa-clock"></i> 8 min read</span>
+      </div>
+      <h3>Finding Calm in Chaos: A Guide to Mindful Living</h3>
+      <p class="post-card-excerpt">In our constant pursuit of productivity, we've forgotten how to simply be. Here's how slowing down can actually help us accomplish more.</p>
+    </div>
+  </a>
+</article>
+
+<article class="post-card" data-category="travel">
+  <a href="/post.html?slug=art-of-slow-travel">
+    <div class="post-card-image">
+      <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=800&q=80" alt="The Art of Slow Travel: Why Racing Through Destinations Misses the Point" loading="lazy">
+      <span class="post-card-category">Travel</span>
+    </div>
+    <div class="post-card-content">
+      <div class="post-card-meta">
+        <span><i class="far fa-calendar"></i> March 22, 2026</span>
+        <span><i class="far fa-clock"></i> 6 min read</span>
+      </div>
+      <h3>The Art of Slow Travel: Why Racing Through Destinations Misses the Point</h3>
+      <p class="post-card-excerpt">What if the journey mattered more than the destination? Exploring the philosophy of taking your time.</p>
+    </div>
+  </a>
+</article>
+
+<article class="post-card" data-category="productivity">
+  <a href="/post.html?slug=building-better-habits">
+    <div class="post-card-image">
+      <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&q=80" alt="Building Better Habits: The Compound Effect" loading="lazy">
+      <span class="post-card-category">Productivity</span>
+    </div>
+    <div class="post-card-content">
+      <div class="post-card-meta">
+        <span><i class="far fa-calendar"></i> March 20, 2026</span>
+        <span><i class="far fa-clock"></i> 5 min read</span>
+      </div>
+      <h3>Building Better Habits: The Compound Effect</h3>
+      <p class="post-card-excerpt">Small changes compound over time. Here's how to build habits that actually stick, according to science.</p>
+    </div>
+  </a>
+</article>
+
+<article class="post-card" data-category="design">
+  <a href="/post.html?slug=designing-workspace">
+    <div class="post-card-image">
+      <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&q=80" alt="Designing Your Perfect Workspace" loading="lazy">
+      <span class="post-card-category">Design</span>
+    </div>
+    <div class="post-card-content">
+      <div class="post-card-meta">
+        <span><i class="far fa-calendar"></i> March 18, 2026</span>
+        <span><i class="far fa-clock"></i> 7 min read</span>
+      </div>
+      <h3>Designing Your Perfect Workspace</h3>
+      <p class="post-card-excerpt">Your environment shapes your thoughts. A well-designed workspace can boost creativity and focus.</p>
+    </div>
+  </a>
+</article>
+
+<article class="post-card" data-category="food">
+  <a href="/post.html?slug=hidden-food-paradise">
+    <div class="post-card-image">
+      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80" alt="The Hidden Food Paradise of Southeast Asia" loading="lazy">
+      <span class="post-card-category">Food</span>
+    </div>
+    <div class="post-card-content">
+      <div class="post-card-meta">
+        <span><i class="far fa-calendar"></i> March 15, 2026</span>
+        <span><i class="far fa-clock"></i> 10 min read</span>
+      </div>
+      <h3>The Hidden Food Paradise of Southeast Asia</h3>
+      <p class="post-card-excerpt">Beyond the tourist trails lies a world of culinary treasures. Join us on a journey through local markets.</p>
+    </div>
+  </a>
+</article>
+
+<article class="post-card" data-category="technology">
+  <a href="/post.html?slug=digital-minimalism">
+    <div class="post-card-image">
+      <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80" alt="Digital Minimalism: Reclaiming Your Attention" loading="lazy">
+      <span class="post-card-category">Technology</span>
+    </div>
+    <div class="post-card-content">
+      <div class="post-card-meta">
+        <span><i class="far fa-calendar"></i> March 12, 2026</span>
+        <span><i class="far fa-clock"></i> 6 min read</span>
+      </div>
+      <h3>Digital Minimalism: Reclaiming Your Attention</h3>
+      <p class="post-card-excerpt">We've allowed technology to fragment our attention. Here's how to take it back.</p>
+    </div>
+  </a>
+</article>
+          </div>
+        </div>
+      </section>
+    
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>Warm Stories</h3>
+          <p>A digital space dedicated to thoughtful stories about life, travel, design, and the pursuit of meaning.</p>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/blog.html">Blog</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="/blog.html?category=lifestyle">Lifestyle</a></li>
+            <li><a href="/blog.html?category=travel">Travel</a></li>
+            <li><a href="/blog.html?category=design">Design</a></li>
+            <li><a href="/blog.html?category=food">Food</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+            <li><a href="#"><i class="fab fa-pinterest"></i> Pinterest</a></li>
+            <li><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>2026 Warm Stories. Crafted with care.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="/js/main.js"></script>
+</body>
+</html>
