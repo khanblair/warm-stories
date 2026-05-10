@@ -1,17 +1,17 @@
 /* ========================================
-   Blog Clone - Warm Editorial Theme
+   Blog Clone - Navy Editorial Theme
    ======================================== */
 
 /* --- CSS Variables --- */
 :root {
-  --primary: #2D2A26;
-  --secondary: #6B6560;
-  --accent: #C4A77D;
-  --accent-dark: #A8895F;
-  --bg: #FDFBF7;
-  --surface: #F5F1EA;
-  --text: #1A1816;
-  --muted: #9A9590;
+  --primary: #0A1628;
+  --secondary: #3B5998;
+  --accent: #4A90D9;
+  --accent-dark: #2C5F8A;
+  --bg: #F0F4F8;
+  --surface: #E2E8F0;
+  --text: #1A2332;
+  --muted: #7B8DA3;
   --error: #C75050;
   --success: #5A9E6F;
   
@@ -27,8 +27,8 @@
   --space-2xl: 80px;
   
   --radius: 8px;
-  --shadow: 0 4px 20px rgba(45, 42, 38, 0.08);
-  --shadow-hover: 0 8px 30px rgba(45, 42, 38, 0.12);
+  --shadow: 0 4px 20px rgba(10, 22, 40, 0.08);
+  --shadow-hover: 0 8px 30px rgba(10, 22, 40, 0.12);
   
   --transition: 200ms ease;
   --max-width: 1200px;
@@ -120,9 +120,9 @@ p:last-child { margin-bottom: 0; }
 .header {
   position: sticky;
   top: 0;
-  background: rgba(253, 251, 247, 0.95);
+  background: rgba(240, 244, 248, 0.95);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(45, 42, 38, 0.08);
+  border-bottom: 1px solid rgba(10, 22, 40, 0.08);
   z-index: 1000;
   padding: var(--space-sm) 0;
 }
