@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Story - Warm Stories</title>
+  <meta name="description" content="Read a story from Warm Stories.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <a href="/" class="logo">Warm Stories</a>
+      
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="/" class="{{#ifEquals currentPage 'home'}}active{{/ifEquals}}">Home</a></li>
+          <li><a href="/blog.html" class="{{#ifEquals currentPage 'blog'}}active{{/ifEquals}}">Blog</a></li>
+          <li><a href="/about.html" class="{{#ifEquals currentPage 'about'}}active{{/ifEquals}}">About</a></li>
+          <li><a href="/contact.html" class="{{#ifEquals currentPage 'contact'}}active{{/ifEquals}}">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    
+      <div id="post-detail">
+        <div class="post-detail-loader" style="text-align: center; padding: var(--space-2xl);">
+          <div style="font-size: 2rem; color: var(--accent);"><i class="fas fa-spinner fa-pulse"></i></div>
+          <p style="color: var(--secondary); margin-top: var(--space-md);">Loading story...</p>
+        </div>
+      </div>
+      <script>
+        window.__POSTS__ = [{"id":"1","slug":"finding-calm-in-chaos","title":"Finding Calm in Chaos: A Guide to Mindful Living","excerpt":"In our constant pursuit of productivity, we've forgotten how to simply be. Here's how slowing down can actually help us accomplish more.","category":"Lifestyle","categorySlug":"lifestyle","author":"Sarah Mitchell","authorRole":"Editor in Chief","date":"March 25, 2026","readTime":"8 min read","image":"https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&q=80","featured":true,"content":"Full article content would go here..."},{"id":"2","slug":"art-of-slow-travel","title":"The Art of Slow Travel: Why Racing Through Destinations Misses the Point","excerpt":"What if the journey mattered more than the destination? Exploring the philosophy of taking your time.","category":"Travel","categorySlug":"travel","author":"James Chen","authorRole":"Contributing Writer","date":"March 22, 2026","readTime":"6 min read","image":"https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=800&q=80","featured":true,"content":"Full article content would go here..."},{"id":"3","slug":"building-better-habits","title":"Building Better Habits: The Compound Effect","excerpt":"Small changes compound over time. Here's how to build habits that actually stick, according to science.","category":"Productivity","categorySlug":"productivity","author":"Emily Rodriguez","authorRole":"Staff Writer","date":"March 20, 2026","readTime":"5 min read","image":"https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&q=80","featured":false,"content":"Full article content would go here..."},{"id":"4","slug":"designing-workspace","title":"Designing Your Perfect Workspace","excerpt":"Your environment shapes your thoughts. A well-designed workspace can boost creativity and focus.","category":"Design","categorySlug":"design","author":"Alex Thompson","authorRole":"Design Director","date":"March 18, 2026","readTime":"7 min read","image":"https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&q=80","featured":false,"content":"Full article content would go here..."},{"id":"5","slug":"hidden-food-paradise","title":"The Hidden Food Paradise of Southeast Asia","excerpt":"Beyond the tourist trails lies a world of culinary treasures. Join us on a journey through local markets.","category":"Food","categorySlug":"food","author":"Maria Santos","authorRole":"Food Editor","date":"March 15, 2026","readTime":"10 min read","image":"https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80","featured":false,"content":"Full article content would go here..."},{"id":"6","slug":"digital-minimalism","title":"Digital Minimalism: Reclaiming Your Attention","excerpt":"We've allowed technology to fragment our attention. Here's how to take it back.","category":"Technology","categorySlug":"technology","author":"David Park","authorRole":"Tech Writer","date":"March 12, 2026","readTime":"6 min read","image":"https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80","featured":false,"content":"Full article content would go here..."}];
+      </script>
+    
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>Warm Stories</h3>
+          <p>A digital space dedicated to thoughtful stories about life, travel, design, and the pursuit of meaning.</p>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/blog.html">Blog</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="/blog.html?category=lifestyle">Lifestyle</a></li>
+            <li><a href="/blog.html?category=travel">Travel</a></li>
+            <li><a href="/blog.html?category=design">Design</a></li>
+            <li><a href="/blog.html?category=food">Food</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+            <li><a href="#"><i class="fab fa-pinterest"></i> Pinterest</a></li>
+            <li><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>2026 Warm Stories. Crafted with care.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="/js/main.js"></script>
+</body>
+</html>
